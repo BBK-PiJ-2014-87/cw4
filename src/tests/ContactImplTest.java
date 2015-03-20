@@ -4,18 +4,21 @@ import static org.junit.Assert.*;
 import logic.ContactImpl;
 import interfaces.Contact;
 
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class ContactImplTest {
-	Contact person1;
-	Contact person2;
-	Contact person3;
-	String note1;
-	String note2;
+	static Contact person1;
+	static Contact person2;
+	static Contact person3;
+	static String note1;
+	static String note2;
 	
-	@Before
-	public void initialize(){
+	/**
+	 * Creates contacts with unique IDs.
+	 */
+	@BeforeClass
+	public static void initialize(){
 		String name = "Jhon Jhonson"; 	//name of the person
 		note1 = "";						//empty string comment
 		note2 = "Test note";			//normal comment
@@ -23,6 +26,7 @@ public class ContactImplTest {
 		person2 = new ContactImpl(name, note2);
 		person3 = new ContactImpl(name, null);	//comment is set to Null
 	}
+	
 
 	/**
 	 * Tests default behavior of the method.
@@ -50,7 +54,7 @@ public class ContactImplTest {
 	@Test
 	public void testGetId() {
 		assertEquals(1, person1.getId());
-		assertEquals(2, person1.getId());
+		assertEquals(2, person2.getId());
 		assertEquals(3, person3.getId());
 		
 	}
