@@ -7,6 +7,12 @@ import interfaces.Contact;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+/**
+ * Tests ContactImpl class.
+ * 
+ * @author Vladimir Ivanovs
+ *
+ */
 public class ContactImplTest {
 	static Contact person1;
 	static Contact person2;
@@ -19,7 +25,7 @@ public class ContactImplTest {
 	 */
 	@BeforeClass
 	public static void initialize(){
-		String name = "Jhon Jhonson"; 			//name of the person
+		String name = "Jhon Jhonson";			//name of the person
 		note1 = "";								//empty string comment
 		note2 = "Test note";					//normal comment
 		person1 = new ContactImpl(name, note1);
