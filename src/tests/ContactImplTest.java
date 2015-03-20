@@ -1,6 +1,7 @@
 package tests;
 
 import static org.junit.Assert.*;
+import logic.ContactImpl;
 import interfaces.Contact;
 
 import org.junit.Before;
