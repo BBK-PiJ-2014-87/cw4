@@ -3,7 +3,7 @@ package logic;
 import interfaces.Contact;
 
 public class ContactImpl implements Contact{
-	private static int count;
+	private static int count = 0;
 	private int id;
 	private String name;
 	private String notes;
