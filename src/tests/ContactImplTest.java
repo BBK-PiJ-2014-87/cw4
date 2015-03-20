@@ -19,9 +19,9 @@ public class ContactImplTest {
 	 */
 	@BeforeClass
 	public static void initialize(){
-		String name = "Jhon Jhonson"; 	//name of the person
-		note1 = "";						//empty string comment
-		note2 = "Test note";			//normal comment
+		String name = "Jhon Jhonson"; 			//name of the person
+		note1 = "";								//empty string comment
+		note2 = "Test note";					//normal comment
 		person1 = new ContactImpl(name, note1);
 		person2 = new ContactImpl(name, note2);
 		person3 = new ContactImpl(name, null);	//comment is set to Null
